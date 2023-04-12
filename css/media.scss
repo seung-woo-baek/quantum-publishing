@@ -1,0 +1,215 @@
+@media screen and (max-width: 1024px) {
+  header{
+    height: auto;
+    padding: 20px 40px;
+    .logo-wrap{
+      .header-logo{
+        width: 100px;
+      }
+      .logo-img{
+        width: 30px;
+      }
+    }
+    .menu{
+      display: none;
+    }
+    .menu-burger-btn{
+      display: block;
+    }
+    &.mobile-on{
+      position: fixed;
+      height: 100vh;
+      flex-direction: column;
+      bottom: 0;
+      justify-content: flex-start;
+      background-color: #fff;
+      .menu-burger-btn{
+        background: url('../images/mobile/M.menu_close.png') no-repeat;
+        background-size: contain;
+      }
+      .menu{
+        display: block;
+        margin-top: 140px;
+        .menu-list{
+          flex-direction: column;
+          .menu-list-item{
+            button{
+              color: #313130;
+            }
+          }
+          .menu-list-item +.menu-list-item{
+            margin-left: 0;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+  .main-banner-wrap{
+    min-width: unset;
+  }
+  .page1-contents{
+    .page1-banner-inner{
+      min-width: unset;
+    }
+    .page1-card-wrap{
+      padding: 60px 0 40px;
+      .page1-card-list{
+        .page1-card{
+          &+.page1-card{
+            margin-left: 12px;
+          }
+          .page1-card-text{
+            font-size: 14px;
+            line-height: 18px;
+          }
+          .page1-card-title{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .page2-contents{
+    .page2-banner-inner{
+      min-width: unset;
+      .page2-banner-top{
+        h3{
+          padding: 60px 0 40px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .page3-contents{
+    .page3-title{
+      padding: 60px 0 40px;
+      font-size: 16px;
+    }
+  }
+  .page4-contents1{
+    padding: 60px 0 40px;
+    .page4-logo{
+      width: 60px;
+    }
+    .page4-text{
+      font-size: 14px;
+    }
+  }
+  .partner-box{
+    .partner-img{
+      width: calc((100% - 20px)/4);
+      height: 45px;
+      &+.partner-img{
+        margin-left: 20px;
+      }
+    }
+  }
+  .page5-contents{
+    padding-bottom: 60px;
+    .page5-title{
+      display: none;
+    }
+    .page5-sub-title{
+      margin-top: 100px;
+      font-size: 24px;
+      text-align: center;
+      span{
+        display: block;
+      }
+    }
+    .page5-contents-wrap{
+      width: 100%;
+      padding: 100px 0;
+      margin-top: 100px;
+      .page5-contents-list{
+
+        li{
+          font-size: 12px;
+          &:nth-child(2){
+            border: none; 
+          }
+        }
+        .mobile{
+          display: block;
+          width: calc((100vw - 40px)/3);
+        }
+        .pc{
+          display: none;
+        }
+      }
+    }
+    .page5-contact-box{
+      width: calc(100% - 40px);
+      padding: 0 20px;
+      .page5-sub-title{
+        display: block;
+        padding-bottom: 10px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: 400;
+        width: 100%;
+        border-bottom: 1px solid #313130;
+      }
+      form{
+        width: 100%;
+        .input_g{
+          flex-direction: column;
+          border: none;
+          &:first-child{
+            border-top: none;
+          }
+          &:last-child{
+            border-bottom: none;
+          }
+          .label{
+            padding: 0;
+            width: 180px;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 250%;
+          }
+          .form-content{
+            padding: 0;
+            select{
+              &.location{
+                width: calc(100% - 40px);
+                
+              }
+              &#address-select{
+                width: 30%;
+              }
+            }
+            
+            input[type=text]{
+              width: calc(100% - 40px);
+              &#emailId{
+                width: 20%;
+              }
+              &#address{
+                width: 30%;
+              }
+            }
+            
+            textarea{
+              width: calc(100% - 40px);
+              height: 80px;
+              font-size: 16px;
+              color: #7f7f7f;
+            }
+          }
+        }
+        .form-btn{
+          margin-top: 40px;
+          width: calc(100% - 40px);
+          height: 60px;
+          background-color: #313130;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
